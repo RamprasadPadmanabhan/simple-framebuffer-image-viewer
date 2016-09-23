@@ -1,0 +1,115 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.\" Man page for image
+.\" Copyright (C) 2016 Ramprasad Padmanabhan
+.TH image 1 "Version 0.01"
+
+.SH NAME
+image \- A very simple image viewer
+
+.SH SYNOPSIS
+image [ \-s \fIwidth\fP \fIheight\fP ] [ \-p \fIx postion\fP \fIy position\fP ]
+[ \-o ] \fIimage file\fP
+
+.SH DESCRIPTION
+.I image
+is a very small image viewer for viewing images in framebuffer.  Its design goal
+is simplicity.
+
+It uses Imlib2 image library from Enlightment project to get pixel data from image.
+The pixel data is then displayed on the framebuffer.
+
+.SH OPTIONS
+
+.TP 4
+\-s \fIwidth\fP \fIheight\fP
+Specify width and height in terms of pixel values.
+
+.TP 4
+\-p \fIx position\fP \fIy position\fP
+Specify the starting position for the image file in terms of pixel value. x and y 
+values are needed for top left corner of the image only.
+
+.TP 4
+\-o
+Display the image in its original width and height. Only works when original dimensions do 
+not exceed framebuffer limits.
+
+.SH COMPILE TIME OPTIONS
+There are a few compile time options, which can help in changing the maximum limits for 
+image display region.
+
+.SH AUTHOR
+
+Ramprasad Padmanabhan <rpprasadp@gmail.com>
+
+.SH BUGS
+
+If you find a bug or a way to make the program lighter and/or improved, or
+there is a feature which you want me to add, please contact me by sending an
+email to the address above.  Note: please make sure that you are using the
+latest version, available at the distribution site (see section DISTRIBUTION
+SITE).
+
+.SH LICENSE
+
+Copyright (C) 2016 Ramprasad Pamanabhan
+
+image is free software; you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+
+image is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+The license can be obtained by writing to the Free Software Foundation, Inc.,
+59 Temple Place - Suite 330, Boston, MA  02111-1307, USA, or by accessing
+.nf
+http://www.gnu.org/copyleft/gpl.html.
+
+.SH SEE ALSO
+
+fbi(1), fim(1), w3m(1), heliwm(1)

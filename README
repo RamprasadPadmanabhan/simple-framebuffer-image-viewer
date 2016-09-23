@@ -1,0 +1,45 @@
+image - A simple image viewer
+
+License - GNU General Public License
+
+image is a free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 2 of the License, or (at your
+option) any later version.
+
+image is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+The license can be obtained by writing to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307,
+USA, or by accessing http://www.gnu.org/copyleft/gpl.html.
+
+About this image viewer
+
+image is a very small image viewer which uses Imlib2 library
+from Enlightment project. It was inspired by many wonderful
+softwares which use framebuffer to display images and work
+great in a simple text console based Linux systems like w3m.
+
+Installation procedure
+
+After extracting the contents, go into the directory.
+
+Type make to compile
+
+Then type make install with superuser privileges
+                       to install the executable
+Then type make install.man with superuser privileges
+                       to install the manual page
+
+The image command is then ready to go. 
+
+For bug fixes please send a mail to <rpprasadp@gmail.com>
+
+I took lot of help from w3m project by Akinori Ito to know how
+to use Imlib2. I also learnt the use of framebuffer from a simple
+framebuffer based project by Fred Eckert in github
+https://gist.github.com/FredEckert/3425429. I also learnt the beauty
+of small softwares from Heliwm project by Hidetoshi Ohtomo.
