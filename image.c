@@ -7,9 +7,10 @@
 #include <sys/ioctl.h>
 #include <Imlib2.h>
 #include <string.h>
-#define MAX_WIDTH 640
-#define MAX_HEIGHT 480
-
+#define MAX_WIDTH 640	//Maximum width in pixels for default display of image
+#define MAX_HEIGHT 480	//Maximum height in pixels for default display of image
+#define MAX_LINES 40	//Number of '\n' needed to make the shell prompt to go to the
+						//bottom of the screen after clearing
 void usage(void)    //display usage
 {
     printf("Basic usage: image image_file\nFor more options see \'man image\'\n");
@@ -164,7 +165,7 @@ int main(int argc, char ** argv)
     data = imlib_image_get_data_for_reading_only();   //get the pixel data from the image
 
     system("clear");    //clear the screen
-    for(i=0;i<35;i++)    //take the shell prompt to lowest position in the screen
+    for(i=0;i<MAX_LINES;i++)    //take the shell prompt to lowest position in the screen
     {
       putchar('\n');
     }

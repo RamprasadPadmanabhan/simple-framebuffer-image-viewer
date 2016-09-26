@@ -19,7 +19,7 @@ USA, or by accessing http://www.gnu.org/copyleft/gpl.html.
 About this image viewer
 
 image is a very small image viewer which uses Imlib2 library
-from Enlightment project. It was inspired by many wonderful
+from Enlightenment project. It was inspired by many wonderful
 softwares which use framebuffer to display images and work
 great in a simple text console based Linux systems like w3m.
 

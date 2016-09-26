@@ -57,7 +57,7 @@ image [ \-s \fIwidth\fP \fIheight\fP ] [ \-p \fIx postion\fP \fIy position\fP ]
 is a very small image viewer for viewing images in framebuffer.  Its design goal
 is simplicity.
 
-It uses Imlib2 image library from Enlightment project to get pixel data from image.
+It uses Imlib2 image library from Enlightenment project to get pixel data from image.
 The pixel data is then displayed on the framebuffer.
 
 .SH OPTIONS
@@ -88,9 +88,7 @@ Ramprasad Padmanabhan <rpprasadp@gmail.com>
 
 If you find a bug or a way to make the program lighter and/or improved, or
 there is a feature which you want me to add, please contact me by sending an
-email to the address above.  Note: please make sure that you are using the
-latest version, available at the distribution site (see section DISTRIBUTION
-SITE).
+email to the address above.
 
 .SH LICENSE
 
