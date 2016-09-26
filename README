@@ -19,7 +19,7 @@ USA, or by accessing http://www.gnu.org/copyleft/gpl.html.
 About this image viewer
 
 image is a very small image viewer which uses Imlib2 library
-from Enlightment project. It was inspired by many wonderful
+from Enlightenment project. It was inspired by many wonderful
 softwares which use framebuffer to display images and work
 great in a simple text console based Linux systems like w3m.
 
@@ -35,6 +35,12 @@ Then type make install.man with superuser privileges
                        to install the manual page
 
 The image command is then ready to go. 
+
+Compile time options
+
+Presently the compile time options need to be changed from
+the source code itself. MAX_WIDTH, MAX_HEIGHT, MAX_LINES 
+are some of them.
 
 For bug fixes please send a mail to <rpprasadp@gmail.com>
 
